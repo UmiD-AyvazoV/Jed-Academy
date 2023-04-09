@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+.stickyButtons {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    z-index: 999999;
+    transition: .5s all ease-in-out;
+    .stickyButton {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        margin-right: 15px;
+        background: #173D7A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .5s all ease-in-out;
+        animation: pulse 2s infinite;
+        a {
+            svg {
+                width: 24px;
+                height: 24px;
+                path {
+                    transition: .5s all ease-in-out;
+                }
+            }
+        }
+    }
+    
+    .stickyButton:first-child:hover {
+        a {
+            svg path {
+                fill: #fff;
+            }
+        }
+    }
+  
+    .stickyButton:hover {
+        background: #ff7a00;
+
+        a {
+            svg path {
+                stroke: #fff;
+            }
+        }
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import 'header';
+@import 'media';
+@import 'sect1';
+@import 'sect2';
+@import 'sect3';
+@import 'sect4';
+@import 'sect5';
+@import 'sect6';
+@import 'sect7';
+@import 'sect8';
+@import 'sect9';
+@import 'sect10';
+@import 'sect11';
+@import 'sect12';
+@import 'footer';
+@import 'about';
+@import 'graduates';
+@import 'teachers';
+@import 'trainer';
+@import 'certificate';
+@import 'courses';
+@import 'singleCourse';
+@import 'blog';
+@import 'vacancy';
+@import 'contact';
+@import 'discounts';
+@import 'register';

@@ -1,0 +1,124 @@
+main {
+  .sect5 {
+    background: #173d7a;
+    position: relative;
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 64px 0;
+      .left {
+        max-width: 505px;
+        h2 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 36px;
+          line-height: 47px;
+          color: #ff7a00;
+        }
+        p {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 21px;
+          color: #fdfdfd;
+          margin-top: 16px;
+        }
+      }
+      .right {
+        input {
+          width: 295px;
+          background: #fefefe;
+          border-radius: 8px;
+          padding: 14px 17px;
+        }
+        input:first-child {
+          margin-right: 20px;
+        }
+        a {
+          background: #ff7a00;
+          border-radius: 4px;
+          display: block;
+          padding: 14px 0;
+          text-align: center;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          color: #fdfdfd;
+          margin-top: 21px;
+          transition: 0.5s linear;
+          span {
+            margin-right: 5px;
+            display: inline-block;
+          }
+          span,
+          img {
+            transition: 0.5s linear;
+          }
+        }
+        a:hover {
+          background: green;
+          border: 1px solid #fdfdfd;
+          span {
+            margin-right: 10px;
+          }
+        }
+        .text {
+          margin-top: 23px;
+          p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 21px;
+            color: #fdfdfd;
+          }
+          .tel {
+            max-width: 100%;
+            margin-left: 55px;
+            p,
+            .num {
+              max-width: 100%;
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 21px;
+              color: #fdfdfd;
+              img {
+                transform: translate(-10px, 5px);
+              }
+            }
+            p:first-child {
+              margin-bottom: 8px;
+            }
+          }
+        }
+      }
+      .img {
+        img {
+          position: absolute;
+        }
+        img:nth-child(1) {
+          top: 5%;
+          left: 16%;
+        }
+        img:nth-child(2) {
+          bottom: 10%;
+          right: 38%;
+        }
+        img:nth-child(3) {
+          top: 13%;
+          left: 38%;
+        }
+        img:nth-child(4) {
+          bottom: 13%;
+          left: 42%;
+        }
+      }
+    }
+  }
+}

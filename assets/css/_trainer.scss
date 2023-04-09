@@ -1,0 +1,49 @@
+main {
+  .trainer {
+    background: url("../img/trainer/bg.png") no-repeat;
+    background-size: cover;
+    .trainerContainer {
+      max-width: 1240px;
+      margin: 80px auto 0;
+      padding: 100px;
+      .info {
+        background: #e9ebf8;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 134px 0 0 20px;
+        h2 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 48px;
+          line-height: 63px;
+          color: #173d7a;
+        }
+        div {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 26px;
+          color: #ff7a00;
+          margin: 10px 0;
+        }
+        p {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #1b1b1b;
+        }
+        p:nth-child(3) {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 21px;
+          color: #173d7a;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

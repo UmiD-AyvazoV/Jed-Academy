@@ -1,0 +1,113 @@
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  background: #173d7a;
+  border-bottom: 1px solid #fff;
+  .container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 16px 0;
+    .menu {
+      width: 50%;
+      position: relative;
+      li {
+        a {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 21px;
+          text-align: center;
+          color: #fdfdfd;
+          transition: 0.5s linear;
+          &.active {
+            color: #ff7a00;
+          }
+        }
+        a:hover {
+          color: #ff7a00;
+        }
+        svg {
+          margin-left: 5px;
+          transition: 0.7s linear;
+        }
+      }
+      li:first-child:hover .drop {
+        opacity: 1;
+        visibility: visible;
+      }
+      li:first-child:hover {
+        svg {
+          transform: rotate(180deg) translateY(10px);
+          path {
+            stroke: lime;
+          }
+        }
+      }
+      .drop {
+        transition: 0.5s linear;
+        background: #173d7a;
+        border: 1px solid #fff;
+        padding: 20px;
+        position: absolute;
+        left: -17px;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 9999;
+        li:nth-child(2) {
+          margin: 20px 0;
+        }
+        li:nth-child(3) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .signUp {
+      background: #ff7a00;
+      border-radius: 4px;
+      transition: 0.5s linear;
+      a {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #fdfdfd;
+        padding: 12px 27px;
+        display: inline-block;
+      }
+    }
+    .signUp:hover {
+      background: rgb(2, 140, 2);
+    }
+    .menu.slide {
+      transform: translateX(0);
+      display: flex;
+      visibility: visible;
+    }
+    .hamburger {
+      position: relative;
+      top: 13px;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      padding: 0.2rem;
+      cursor: pointer;
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
+      div {
+        pointer-events: none;
+        height: 3px;
+        width: 30px;
+        background: #fff;
+        margin-top: 5px;
+        transition: 1s ease;
+      }
+    }
+  }
+}

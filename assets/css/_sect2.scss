@@ -1,0 +1,136 @@
+main {
+  .sect2 {
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 99px 0 110px;
+      position: relative;
+      .title {
+        max-width: 610px;
+        text-align: center;
+        margin: 0 auto;
+        h2 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 48px;
+          line-height: 63px;
+          color: #102b55;
+        }
+        p {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #ff912b;
+          margin: 12px 0 30px;
+        }
+      }
+      .boxs {
+        margin: 0 100px 0 30px;
+        .box1 {
+          width: 592px;
+          height: 500px;
+          background: url("https://jedacademy.az/front/img/01-sol-teref.jpg")
+            no-repeat;
+          background-size: cover;
+          position: relative;
+          margin-right: 20px;
+          .box1Img {
+            img {
+              position: absolute;
+            }
+            img:nth-child(1) {
+              bottom: -5%;
+              left: -5%;
+            }
+            img:nth-child(2) {
+              top: -4%;
+              left: 3%;
+            }
+          }
+        }
+        .box2 {
+          .text {
+            max-width: 387px;
+            margin-right: 40px;
+          }
+          h2 {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 47px;
+            color: #173d7a;
+          }
+          p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #102b55;
+            margin: 20px 0;
+          }
+          a {
+            background: #ff7a00;
+            border-radius: 4px;
+            padding: 13px 51px;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #fdfdfd;
+            transition: 0.5s linear;
+            display: inline-block;
+            width: 175px;
+            img {
+              transition: 0.5s linear;
+              margin-left: 5px;
+            }
+          }
+          a:hover {
+            background: #173d7a;
+            img {
+              margin-left: 10px;
+            }
+          }
+        }
+        .box3 {
+          position: relative;
+          .box3Img {
+            img {
+              position: absolute;
+              top: -18%;
+              left: 25%;
+            }
+          }
+        }
+      }
+      .img {
+        img {
+          position: absolute;
+        }
+        img:nth-child(1) {
+          top: 15%;
+          left: 15%;
+        }
+        img:nth-child(2) {
+          bottom: 3%;
+          left: 39%;
+        }
+        img:nth-child(3) {
+          bottom: 10%;
+          right: 25%;
+        }
+        img:nth-child(4) {
+          top: 26%;
+          right: 20%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+main {
+  .sect9 {
+    background: url("../img/sect9/bg.png") no-repeat;
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0 20px 100px 20px;
+      .title {
+        max-width: 532px;
+        margin: 0 auto;
+        h2 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 48px;
+          line-height: 63px;
+          color: #102b55;
+        }
+        p {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #ff912b;
+          margin: 12px 0 41px;
+        }
+      }
+      .box {
+        border-bottom: 1px solid #a2a2a2;
+        position: relative;
+        padding: 24px 0;
+        cursor: pointer;
+        h2 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 26px;
+          color: #173d7a;
+          margin-right: 50px;
+          transition: 0.4s linear;
+        }
+        h2:hover {
+          color: #ff912b;
+        }
+        p {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #424242;
+          height: 0;
+          overflow-y: auto;
+          transition: .5s linear;
+        }
+        .circle {
+          width: 36px;
+          height: 36px;
+          border: 1px solid #173d7a;
+          border-radius: 50%;
+          position: absolute;
+          top: 20px;
+          right: 0;
+          .bg {
+            background: url("../img/sect9/row.png") no-repeat;
+            background-size: cover;
+            width: 30px;
+            height: 30px;
+            transition: 0.3s linear;
+          }
+        }
+      }
+      .box.active {
+        .circle {
+          .bg {
+            background: url("../img/sect9/+.png") no-repeat;
+            width: 16px;
+            height: 16px;
+          }
+        }
+        .p {
+          height: auto;
+          margin: 16px 0 10px 0;
+        }
+      }
+    }
+  }
+}

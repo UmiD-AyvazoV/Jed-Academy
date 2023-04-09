@@ -1,0 +1,103 @@
+footer {
+  background: linear-gradient(
+    93.81deg,
+    rgba(23, 61, 122, 0.81) 15.6%,
+    #173d7a 97.29%
+  );
+  padding-top: 63px;
+  border-top: 2px solid #ff7a00;
+  .container {
+    max-width: 1240px;
+    margin: 0 auto;
+    .up {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .logo {
+        max-width: 90%;
+        p {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 26px;
+          color: #fdfdfd;
+          margin-top: 16px;
+        }
+      }
+      ul {
+        li {
+          position: relative;
+          a {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #ffffff;
+            margin-bottom: 16px;
+            display: inline-block;
+            transition: 0.5s linear;
+            margin-left: 15px;
+          }
+          a:before {
+            position: absolute;
+            top: 7px;
+            left: 0;
+            content: "";
+            background: #ff7a00;
+            transform: rotate(-45deg);
+            width: 5px;
+            height: 5px;
+          }
+          a:hover {
+            color: #ff7a00;
+          }
+        }
+      }
+      .info {
+        position: relative;
+        img {
+          position: absolute;
+          left: -25px;
+        }
+        .address {
+          max-width: 200px;
+          img {
+            top: 17px;
+          }
+        }
+        p {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          color: #fdfdfd;
+          margin-bottom: 12px;
+          transition: .5s linear;
+          cursor: pointer;
+        }
+        p:hover {
+            color: #ff7a00;
+        }
+      }
+    }
+  }
+  .down {
+    background: #102b55;
+    border-top: 1px solid #fdfdfd;
+    margin-top: 37px;
+    .container {
+      p {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #e0e0e0;
+        padding: 16px 0;
+      }
+    }
+  }
+}

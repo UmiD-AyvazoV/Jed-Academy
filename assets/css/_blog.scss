@@ -1,0 +1,250 @@
+main {
+  .blogs {
+    .container {
+      max-width: 1240px;
+      margin: 100px auto 0;
+      .boxs {
+        flex-wrap: wrap;
+        a {
+          margin: 0 auto;
+          margin-bottom: 20px;
+          .box {
+            max-width: 400px;
+            background: #e9ebf8;
+            backdrop-filter: blur(40px);
+            border-radius: 8px;
+            cursor: pointer;
+            overflow: hidden;
+            img {
+              transition: 0.5s linear;
+            }
+            .text {
+              position: relative;
+              padding: 20px;
+              h2 {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 800;
+                font-size: 24px;
+                line-height: 30px;
+                color: #173d7a;
+              }
+              p {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: #1b1b1b;
+                margin: 12px 0;
+              }
+              .date {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                color: #a2a2a2;
+              }
+              .row {
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+              }
+            }
+          }
+          .box:hover img {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
+  .blog {
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 180px 0 100px 0;
+      .left {
+        width: 60%;
+        padding-bottom: 20px;
+        h2 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 48px;
+          line-height: 63px;
+          color: #173d7a;
+        }
+        .date {
+          p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: #a2a2a2;
+            img {
+              margin-right: 8px;
+            }
+          }
+        }
+        img {
+          max-width: 865px;
+          width: 100%;
+          margin: 20px 0;
+        }
+        p {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #1b1b1b;
+        }
+        p:nth-child(5),
+        p:nth-child(9) {
+          margin: 20px 0;
+        }
+      }
+      .right {
+        width: 40%;
+        margin-left: 20px;
+        .boxs {
+          margin-top: 142px;
+          .box {
+            margin-bottom: 20px;
+            .img {
+              width: 130px;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .text {
+              margin-left: 10px;
+              h2 {
+                max-width: 230px;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+                color: #173d7a;
+              }
+              .date {
+                p {
+                  font-family: "Montserrat";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 18px;
+                  color: #a2a2a2;
+                  display: flex;
+                  align-items: center;
+                  margin-top: 27px;
+                  img {
+                    margin-right: 8px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .boxs,
+        .follow,
+        .form {
+          max-width: 400px;
+          padding: 20px;
+          background: #ffffff;
+          filter: drop-shadow(0px 5px 5px rgba(73, 73, 73, 0.25));
+          border: 1px solid #a2a2a2;
+          border-radius: 8px;
+        }
+        .followForm {
+          position: sticky;
+          top: 100px;
+          .follow {
+            margin: 32px 0;
+            h2 {
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 32px;
+              color: #173d7a;
+              margin-bottom: 20px;
+            }
+            .icons {
+              flex-wrap: wrap;
+              img {
+                margin-right: 16px;
+              }
+            }
+          }
+          .form {
+            background: #102b55;
+            h2 {
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 32px;
+              color: #ffffff;
+            }
+            p {
+              max-width: 279px;
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 21px;
+              color: #fdfdfd;
+              margin: 8px 0 16px;
+            }
+            input,
+            a {
+              width: 100%;
+            }
+            input {
+              background: #fefefe;
+              border-radius: 8px;
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 17px;
+              color: #7b7b7b;
+              padding: 13px 16px;
+              margin-bottom: 20px;
+            }
+            a {
+              transition: 0.5s linear;
+              background: #ff7a00;
+              border-radius: 8px;
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 17px;
+              text-align: center;
+              color: #fdfdfd;
+              display: inline-block;
+              padding: 13px 0;
+              img {
+                transform: translate(5px, 5px);
+                transition: 0.5s linear;
+              }
+            }
+            a:hover {
+              background: green;
+              img {
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

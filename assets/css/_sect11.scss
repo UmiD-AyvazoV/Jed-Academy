@@ -1,0 +1,132 @@
+main {
+  .sect11 {
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding-bottom: 100px;
+      background: url("../img/sect11/bg.png") no-repeat;
+      .title {
+        h2 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 48px;
+          line-height: 63px;
+          text-align: center;
+          color: #102b55;
+        }
+        p {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: center;
+          color: #ff912b;
+          margin: 12px 0 36px;
+        }
+      }
+      .box {
+        max-width: 400px;
+        background: #e9ebf8;
+        backdrop-filter: blur(40px);
+        border-radius: 8px;
+        margin: 0 auto;
+        cursor: pointer;
+        overflow: hidden;
+        img {
+          transition: 0.5s linear;
+        }
+        .text {
+          position: relative;
+          padding: 20px;
+          h2 {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 30px;
+            color: #173d7a;
+          }
+          p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #1b1b1b;
+            margin: 12px 0;
+          }
+          .date {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: #a2a2a2;
+          }
+          .row {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+          }
+        }
+      }
+      .box:hover img {
+        transform: scale(1.05);
+      }
+      a {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #173d7a;
+        border: 1px solid #173d7a;
+        padding: 12px 30px;
+        margin: 30px auto 0;
+        display: block;
+        width: 160px;
+        transition: 0.5s linear;
+        border-radius: 8px;
+      }
+      a:hover {
+        background: #173d7a;
+        color: #fff;
+        border: 1px solid #fff;
+      }
+      .owl-prev,
+      .owl-next {
+        position: absolute;
+        top: 0 !important;
+        transform: translateY(-100%);
+        padding: 10px;
+        color: transparent;
+        transition: 0.5s linear;
+        height: fit-content;
+      }
+
+      .owl-next {
+        background: {
+          image: url("../img/sect1/right.png");
+          repeat: no-repeat;
+        }
+        top: auto;
+        right: 0;
+        bottom: 45px !important;
+        left: auto;
+      }
+
+      .owl-prev {
+        background: {
+          image: url("../img/sect1/left.png");
+          repeat: no-repeat;
+        }
+        top: auto;
+        right: 44px;
+        bottom: 45px !important;
+        left: auto;
+      }
+    }
+  }
+}

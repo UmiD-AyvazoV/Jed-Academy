@@ -1,0 +1,146 @@
+main {
+  background: #f5f5f5;
+  .sect1 {
+    .container {
+      border-bottom: 2px solid #ff7a00;
+      #hero-slider {
+        position: relative;
+        @media (min-height: 700px) {
+          height: 81vh;
+        }
+      }
+
+      .owl-carousel {
+        display: block;
+        width: 100%;
+        -webkit-tap-highlight-color: transparent;
+        position: relative;
+        z-index: 1;
+      }
+
+      .owl-carousel .owl-stage {
+        position: relative;
+        -ms-touch-action: pan-Y;
+        height: 100%; // <- Declare height
+      }
+      .owl-stage-outer {
+        height: 100%;
+      }
+
+      .owl-slide {
+        position: relative;
+        transition: 5s linear;
+        img {
+          height: 81vh;
+          object-fit: cover;
+        }
+        .text {
+          position: absolute;
+          top: 30%;
+          left: 50%;
+          max-width: 592px;
+          transition: 0.7s linear;
+          transform: scale(0);
+          h2 {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 56px;
+            color: #fdfdfd;
+          }
+          p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #fdfdfd;
+            margin: 20px 0 40px;
+          }
+          a {
+            background: transparent;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #fdfdfd;
+            padding: 10px 60px;
+            border: 1px solid #ff7a00;
+            transition: 0.3s linear;
+          }
+          a:hover {
+            background: #173d7a;
+          }
+        }
+        @media (min-height: 700px) {
+          height: 100%;
+          padding: 0;
+        }
+      }
+
+      .owl-item.active {
+        .text {
+          transform: scale(1);
+          left: 17%;
+        }
+      }
+
+      .owl-prev,
+      .owl-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 8px;
+        padding: 10px;
+        color: transparent;
+        transition: 0.5s linear;
+      }
+
+      .owl-next {
+        background: {
+          image: url("../img/sect1/right.png");
+          repeat: no-repeat;
+        }
+        top: auto;
+        right: 100px;
+        bottom: 45px !important;
+        left: auto;
+      }
+
+      .owl-prev {
+        background: {
+          image: url("../img/sect1/left.png");
+          repeat: no-repeat;
+        }
+        top: auto;
+        right: 135px;
+        bottom: 45px !important;
+        left: auto;
+      }
+
+      .owl-dots {
+        position: absolute;
+        top: 40%;
+        right: 8%;
+        z-index: 12;
+      }
+
+      .owl-dot {
+        border: 1px solid #ff7a00;
+        transform: rotate(-45deg);
+        display: block;
+        width: 12px;
+        height: 12px;
+        transition: all 200ms ease-in-out;
+        margin: 7px 0;
+        &.active {
+          background-color: #ff7a00;
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}

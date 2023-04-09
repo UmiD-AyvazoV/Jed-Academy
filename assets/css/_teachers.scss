@@ -1,0 +1,44 @@
+main {
+  .teachers {
+    max-width: 1240px;
+    margin: 100px auto;
+    flex-wrap: wrap;
+    a {
+      margin: 20px auto;
+    }
+    .box {
+      width: 280px;
+      transition: 0.5s linear;
+      background: #fdfdfd;
+      border: 1px solid #788eb2;
+      border-radius: 8px;
+      img {
+        width: 100%;
+      }
+      .text {
+        padding-left: 16px;
+        h2 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 26px;
+          color: #173d7a;
+          margin: 16px 0 8px;
+        }
+        p {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #424242;
+          margin-bottom: 13px;
+        }
+      }
+    }
+    .box:hover {
+      transform: scale(1.1);
+    }
+  }
+}

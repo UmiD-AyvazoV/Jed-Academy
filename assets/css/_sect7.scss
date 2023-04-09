@@ -1,0 +1,116 @@
+main {
+  .sect7 {
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 20px 100px 20px;
+      background: url("../img/sect7/bg.png") no-repeat;
+      background-size: contain;
+      .title {
+        max-width: 610px;
+        margin: 0 auto;
+        h2 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 48px;
+          line-height: 63px;
+          text-align: center;
+          color: #102b55;
+        }
+        p {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: center;
+          color: #ff912b;
+          margin: 12px 0 36px;
+        }
+      }
+      .box {
+        background: #fdfdfd;
+        border: 1px solid #788eb2;
+        border-radius: 8px;
+        .text {
+          padding-left: 16px;
+          h2 {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 26px;
+            color: #173d7a;
+            margin: 16px 0 8px;
+          }
+          p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #424242;
+            margin-bottom: 13px;
+          }
+        }
+      }
+      a {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #173d7a;
+        border: 1px solid #173d7a;
+        padding: 12px 30px;
+        margin: 30px auto 0;
+        display: block;
+        width: 160px;
+        transition: 0.5s linear;
+        border-radius: 8px;
+      }
+      a:hover {
+        background: #173d7a;
+        color: #fff;
+        border: 1px solid #fff;
+      }
+      .owl-carousel .owl-dots.disabled,
+      .owl-carousel .owl-nav.disabled {
+        display: block;
+      }
+      .owl-prev,
+      .owl-next {
+        position: absolute;
+        top: 0 !important;
+        transform: translateY(-100%);
+        padding: 10px;
+        color: transparent;
+        transition: 0.5s linear;
+        height: fit-content;
+      }
+
+      .owl-next {
+        background: {
+          image: url("../img/sect1/right.png");
+          repeat: no-repeat;
+        }
+        top: auto;
+        right: 0;
+        bottom: 45px !important;
+        left: auto;
+      }
+
+      .owl-prev {
+        background: {
+          image: url("../img/sect1/left.png");
+          repeat: no-repeat;
+        }
+        top: auto;
+        right: 44px;
+        bottom: 45px !important;
+        left: auto;
+      }
+    }
+  }
+}
